@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.truncate-text{
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Adjust the number of lines you want to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+
+
+
+.dots-8 {
+  width: 35px;
+  aspect-ratio: 1;
+  --_g: no-repeat radial-gradient(farthest-side,#000 94%,#0000);
+  background:
+    var(--_g) 0    0,
+    var(--_g) 100% 0,
+    var(--_g) 100% 100%,
+    var(--_g) 0    100%;
+  background-size: 40% 40%;
+  animation: d8 .5s infinite; 
+}
+
+@keyframes d8 {
+  100% {background-position: 100% 0,100% 100%,0 100%,0 0}
+}
+
+.box-infinity::-webkit-scrollbar {
+  width: 0 !important; /* Remove vertical scrollbar */
+  height: 0 !important; /* Remove horizontal scrollbar */
+}
