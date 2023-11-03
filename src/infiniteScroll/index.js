@@ -96,7 +96,6 @@ function InfiniteScroll() {
 
 
   const fetchData = async (pageNumber) => {
-    console.log(pageNumber, ';pageNumberpageNumber');
     try {
       setLoading(true);
       const response = await axios.get(`http://localhost:5000/api/photo-gallery/${pageNumber}`);
